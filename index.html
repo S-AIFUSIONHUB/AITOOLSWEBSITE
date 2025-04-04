@@ -4,77 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Fusion Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e0f7fa;
-            text-align: center;
-        }
-        header {
-            background: #00796b;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        .card h2 {
-            color: #00796b;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #00796b;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
-        AI Fusion Hub - Integrate & Customize AI Tools
+        <h1>AI Fusion Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#explore">Explore AI Tools</a></li>
+                <li><a href="#workflow">Build Workflow</a></li>
+                <li><a href="#dashboard">User Dashboard</a></li>
+                <li><a href="#marketplace">Marketplace</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Connect & Customize AI Tools</h2>
+        <p>Integrate multiple AI tools to create your own workflows.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- AI Tools Sections -->
     <div class="container">
-        <div class="card">
+        <section id="explore" class="section">
             <h2>Explore AI Tools</h2>
-            <p>Find AI tools for text, images, automation, and more.</p>
-            <a href="#" class="btn">Discover</a>
-        </div>
-        
-        <div class="card">
-            <h2>Build AI Workflows</h2>
-            <p>Combine AI tools to create powerful workflows.</p>
-            <a href="#" class="btn">Start Building</a>
-        </div>
-        
-        <div class="card">
+            <p>Discover various AI tools for text, images, automation, and more.</p>
+        </section>
+        <section id="workflow" class="section">
+            <h2>Build Your AI Workflow</h2>
+            <p>Customize and connect different AI tools for a personalized experience.</p>
+        </section>
+        <section id="dashboard" class="section">
             <h2>User Dashboard</h2>
-            <p>Manage and save your AI workflows.</p>
-            <a href="#" class="btn">Go to Dashboard</a>
-        </div>
-        
-        <div class="card">
+            <p>Save and manage your AI workflows from a single dashboard.</p>
+        </section>
+        <section id="marketplace" class="section">
             <h2>AI Marketplace</h2>
-            <p>Find new AI tools to enhance your workflows.</p>
-            <a href="#" class="btn">Explore</a>
-        </div>
+            <p>Explore and add new AI tools to enhance your workflows.</p>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AI Fusion Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
