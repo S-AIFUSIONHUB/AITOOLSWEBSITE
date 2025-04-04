@@ -4,63 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Fusion Hub</title>
-    
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="style.css">
-    
     <style>
-        /* In case external CSS fails, this will apply */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: lightblue;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #e0f7fa;
             text-align: center;
         }
-        .section {
-            background: #fff;
-            margin: 20px 0;
+        header {
+            background: #00796b;
+            color: white;
             padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
         }
-        h2 {
-            color: #333;
+        .card h2 {
+            color: #00796b;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00796b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>AI Fusion Hub</h1>
+        AI Fusion Hub - Integrate & Customize AI Tools
     </header>
+    
     <div class="container">
-        <div class="section">
+        <div class="card">
             <h2>Explore AI Tools</h2>
-            <p>Discover various AI tools for text, images, automation, and more.</p>
+            <p>Find AI tools for text, images, automation, and more.</p>
+            <a href="#" class="btn">Discover</a>
         </div>
-        <div class="section">
-            <h2>Build Your AI Workflow</h2>
-            <p>Customize and connect different AI tools for a personalized experience.</p>
+        
+        <div class="card">
+            <h2>Build AI Workflows</h2>
+            <p>Combine AI tools to create powerful workflows.</p>
+            <a href="#" class="btn">Start Building</a>
         </div>
-        <div class="section">
+        
+        <div class="card">
             <h2>User Dashboard</h2>
-            <p>Save and manage your AI workflows from a single dashboard.</p>
+            <p>Manage and save your AI workflows.</p>
+            <a href="#" class="btn">Go to Dashboard</a>
         </div>
-        <div class="section">
+        
+        <div class="card">
             <h2>AI Marketplace</h2>
-            <p>Explore and add new AI tools to enhance your workflows.</p>
+            <p>Find new AI tools to enhance your workflows.</p>
+            <a href="#" class="btn">Explore</a>
         </div>
     </div>
 </body>
 </html>
-
