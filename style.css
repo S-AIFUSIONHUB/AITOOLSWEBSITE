@@ -13,40 +13,61 @@ header {
     color: white;
     padding: 15px;
     text-align: center;
+    position: relative;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    background: white;
+    color: #0073e6;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 50px;
+    padding: 60px;
     background: #005bb5;
     color: white;
 }
-.hero button {
-    padding: 10px 20px;
+.cta-button {
+    padding: 12px 25px;
     background: white;
     color: #005bb5;
     border: none;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #ffcc00;
+    color: #333;
 }
 
 /* Sections */
 .container {
     width: 90%;
     margin: auto;
+    padding: 20px;
 }
 .section {
     background: white;
@@ -54,6 +75,7 @@ nav ul li a {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Footer */
@@ -64,4 +86,5 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
 
