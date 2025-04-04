@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Fusion Hub</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -15,6 +16,7 @@
             <a href="#">Build Workflow</a>
             <a href="#">User Dashboard</a>
             <a href="#">Marketplace</a>
+            <button id="login-btn">Login</button>
         </nav>
     </header>
 
@@ -27,11 +29,11 @@
     <div class="container">
         <div class="card">
             <h3>Explore AI Tools</h3>
-            <p>Discover various AI tools for text, images, automation, and more.</p>
+            <p>Discover AI tools for text, images, automation, and more.</p>
         </div>
         <div class="card">
             <h3>Build Your AI Workflow</h3>
-            <p>Customize and connect different AI tools for a personalized experience.</p>
+            <p>Customize and connect AI tools for a personalized experience.</p>
         </div>
         <div class="card">
             <h3>User Dashboard</h3>
@@ -46,6 +48,17 @@
     <footer>
         <p>© 2025 AI Fusion Hub. All rights reserved.</p>
     </footer>
+
+    <!-- Login Popup -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button id="login-submit">Login</button>
+        </div>
+    </div>
 
 </body>
 </html>
