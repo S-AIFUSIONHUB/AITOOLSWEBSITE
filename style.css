@@ -1,33 +1,67 @@
-/* Apply background color and fonts */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light grey background */
-}
-
-/* Style the header */
-header {
-    background: #333; /* Dark grey header */
-    color: #fff; /* White text */
-    padding: 15px;
-    text-align: center;
-}
-
-/* Center the main content */
-.container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Style headings */
-h1, h2 {
+    background-color: #e6f7ff;
     color: #333;
 }
 
-/* Add some spacing */
-p {
-    font-size: 18px;
+/* Header */
+header {
+    background: #0073e6;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #005bb5;
+    color: white;
+}
+.hero button {
+    padding: 10px 20px;
+    background: white;
+    color: #005bb5;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sections */
+.container {
+    width: 90%;
+    margin: auto;
+}
+.section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
