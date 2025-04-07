@@ -1,85 +1,75 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #cde7f9, #e8f0fe);
+  background: #eaf6ff;
   color: #333;
 }
 
 header {
-  background-color: #1f3b4d;
+  background-color: #173b53;
   color: white;
-  padding: 30px 20px;
   text-align: center;
-  border-bottom: 5px solid #00bcd4;
+  padding: 30px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
+h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2rem;
 }
 
-header p {
-  margin: 10px 0 0;
-  font-size: 1.2em;
+main {
+  padding: 20px;
 }
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px 0;
-}
-
-.section {
-  background: #ffffff;
-  padding: 25px;
-  margin: 20px 0;
+.card {
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
 
-.section:hover {
-  transform: scale(1.01);
-}
-
-h2 {
-  color: #1f3b4d;
+.card:hover {
+  transform: translateY(-2px);
 }
 
 button {
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 10px 15px;
   background-color: #00bcd4;
-  border: none;
-  border-radius: 6px;
   color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #008fa1;
+  background-color: #0097a7;
+}
+
+.output-section {
+  border: 2px dashed #00bcd4;
 }
 
 #outputBox {
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 15px;
-  background-color: #f0f8ff;
-  border: 2px dashed #00bcd4;
-  border-radius: 8px;
-  font-size: 1em;
-  min-height: 50px;
+  background: #f4faff;
+  border-radius: 6px;
+  min-height: 60px;
+  font-family: monospace;
+  white-space: pre-wrap;
 }
 
 footer {
-  background-color: #1f3b4d;
-  color: white;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 30px;
-  font-size: 0.9em;
+  padding: 15px;
+  background: #173b53;
+  color: white;
+  margin-top: 40px;
 }
