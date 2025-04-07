@@ -1,67 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Fusion Hub</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Fusion Hub</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>🤖 AI Fusion Hub</h1>
+    <p>Aggregate, Customize, and Run AI Workflows</p>
+  </header>
 
-    <header>
-        <h1>AI Fusion Hub</h1>
-        <nav>
-            <a href="#">Explore AI Tools</a>
-            <a href="#">Build Workflow</a>
-            <a href="#">User Dashboard</a>
-            <a href="#">Marketplace</a>
-            <button id="login-btn">Login</button>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h2>Connect & Customize AI Tools</h2>
-        <p>Integrate multiple AI tools to create your own workflows.</p>
-        <a href="#" class="btn">Get Started</a>
+  <main class="container">
+    <section class="section">
+      <h2>Explore AI Tools</h2>
+      <p>Discover various AI tools for text, image, automation, and more.</p>
+      <button onclick="simulateTool('Text AI')">Try Text AI</button>
+      <button onclick="simulateTool('Image Generator')">Try Image AI</button>
+      <button onclick="simulateTool('Automation Bot')">Try Automation</button>
     </section>
 
-    <div class="container">
-        <div class="card">
-            <h3>Explore AI Tools</h3>
-            <p>Discover AI tools for text, images, automation, and more.</p>
-        </div>
-        <div class="card">
-            <h3>Build Your AI Workflow</h3>
-            <p>Customize and connect AI tools for a personalized experience.</p>
-        </div>
-        <div class="card">
-            <h3>User Dashboard</h3>
-            <p>Save and manage your AI workflows from a single dashboard.</p>
-        </div>
-        <div class="card">
-            <h3>AI Marketplace</h3>
-            <p>Explore and add new AI tools to enhance your workflows.</p>
-        </div>
-    </div>
+    <section class="section">
+      <h2>Build Your AI Workflow</h2>
+      <p>Drag, drop, and connect AI tools for a personalized experience.</p>
+    </section>
 
-    <footer>
-        <p>© 2025 AI Fusion Hub. All rights reserved.</p>
-    </footer>
+    <section class="section">
+      <h2>User Dashboard</h2>
+      <p>Save and manage your AI workflows from one place.</p>
+    </section>
 
-    <!-- Login Popup -->
-    <div id="login-popup" class="popup">
-        <div class="popup-content">
-            <span id="close-popup">&times;</span>
-            <h2>Login</h2>
-            <input type="email" id="email" placeholder="Enter your email">
-            <input type="password" id="password" placeholder="Enter your password">
-            <button id="login-submit">Login</button>
-        </div>
-    </div>
+    <section class="section">
+      <h2>AI Marketplace</h2>
+      <p>Browse and add new tools to enhance your AI toolkit.</p>
+    </section>
 
+    <section class="section">
+      <h2>Output Console</h2>
+      <div id="outputBox">Click a button to simulate an AI tool</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AI Fusion Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
 
