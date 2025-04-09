@@ -4,49 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Fusion Hub</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #123955;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0097a7;
+    }
+    .output-console {
+      border: 2px dashed #00bcd4;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>🤖 AI Fusion Hub</h1>
     <p>Aggregate, Customize, and Run AI Workflows</p>
   </header>
 
-  <main>
-    <section class="card">
-      <h2>Explore AI Tools</h2>
-      <p>Discover various AI tools for text, image, automation, and more.</p>
-      <button onclick="simulateTool('Text Generator')">Try Text AI</button>
-      <button onclick="simulateTool('Image Generator')">Try Image AI</button>
-      <button onclick="simulateTool('Automation Tool')">Try Automation</button>
-    </section>
+  <section>
+    <h2>Explore AI Tools</h2>
+    <p>Discover various AI tools for text, image, automation, and more.</p>
+    <button id="tryTextAI" class="button">Try Text AI</button>
+    <button id="tryImageAI" class="button">Try Image AI</button>
+    <button id="tryAutomation" class="button">Try Automation</button>
+  </section>
 
-    <section class="card">
-      <h2>Build Your AI Workflow</h2>
-      <p>Drag, drop, and connect AI tools for a personalized experience.</p>
-    </section>
+  <section>
+    <h2>Build Your AI Workflow</h2>
+    <p>Drag, drop, and connect AI tools for a personalized experience.</p>
+  </section>
 
-    <section class="card">
-      <h2>User Dashboard</h2>
-      <p>Save and manage your AI workflows from one place.</p>
-    </section>
+  <section>
+    <h2>User Dashboard</h2>
+    <p>Save and manage your AI workflows from one place.</p>
+  </section>
 
-    <section class="card">
-      <h2>AI Marketplace</h2>
-      <p>Browse and add new tools to enhance your AI toolkit.</p>
-    </section>
+  <section>
+    <h2>AI Marketplace</h2>
+    <p>Browse and add new tools to enhance your AI toolkit.</p>
+  </section>
 
-    <section class="card output-section">
-      <h2>Output Console</h2>
-      <div id="outputBox">Click a button to simulate an AI tool</div>
-    </section>
-  </main>
+  <section class="output-console" id="outputConsole">
+    <strong>Output Console</strong>
+    <p>Click a button to simulate an AI tool</p>
+  </section>
 
-  <footer>
-    <p>© 2025 AI Fusion Hub. All rights reserved.</p>
-  </footer>
+  <script>
+    document.getElementById("tryTextAI").addEventListener("click", function () {
+      document.getElementById("outputConsole").innerHTML = `
+        <strong>Output Console</strong>
+        <p><strong>🤖 AI says:</strong> Hello! I’m a simulated AI responding to your input.</p>
+      `;
+    });
 
-  <script src="script.js"></script>
+    document.getElementById("tryImageAI").addEventListener("click", function () {
+      document.getElementById("outputConsole").innerHTML = `
+        <strong>Output Console</strong>
+        <p><strong>🖼️ AI says:</strong> I have processed your image using simulated AI.</p>
+      `;
+    });
+
+    document.getElementById("tryAutomation").addEventListener("click", function () {
+      document.getElementById("outputConsole").innerHTML = `
+        <strong>Output Console</strong>
+        <p><strong>⚙️ AI says:</strong> Simulated automation task completed.</p>
+      `;
+    });
+  </script>
+
 </body>
 </html>
-
